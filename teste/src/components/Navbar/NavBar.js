@@ -1,13 +1,14 @@
 import React from 'react';
 import './NavBar.css'
 import { Layout } from 'antd';
+import logo from '../../images/logoRM.png';
 const { Header } = Layout;
 
 function NavBar() {
 
   return (
-    <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-      <div className="logo" />
+    <Header className="header">
+      <img className="logo" src={logo} alt="logo" />
     </Header>
   )
 }
