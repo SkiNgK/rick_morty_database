@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter as Router } from "react-router-dom";
-import CharacterDescriptionPage from './CharacterDescriptionPage/CharacterDescriptionPage';
 import CharacterListPage from './CharacterListPage/CharacterListPage';
-import { Layout, Breadcrumb } from 'antd';
+import { Layout } from 'antd';
 import NavBar from './Navbar/NavBar';
 import "antd/dist/antd.css";
 import "./App.css"
@@ -18,7 +17,6 @@ function App() {
           marginTop:'3rem' }}>
           <Router>
             <Route path="/" exact component={CharacterListPage} />
-            <Route path="/character" component={CharacterDescriptionPage} />
           </Router>
         </div>
       </Content>
