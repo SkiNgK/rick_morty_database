@@ -130,9 +130,13 @@ export default function CharacterListPage() {
               <hr />
               <div style={{ display: 'flex', flexDirection: 'Column', marginTop: '1rem' }}>
                 <p>First seen in:</p>
-                <p style={{ color: 'gray', fontSize: 'smaller' }}>{character.location.name}</p>
+                <p style={{ color: 'gray', fontSize: 'smaller' }}>
+                  {character.location.name}
+                </p>
                 <p>Last known location:</p>
-                <p style={{ color: 'gray', fontSize: 'smaller' }}>{character.origin.name}</p>
+                <p style={{ color: 'gray', fontSize: 'smaller' }}>
+                  {character.origin.name}
+                </p>
               </div>
             </Card>
           </Col>
