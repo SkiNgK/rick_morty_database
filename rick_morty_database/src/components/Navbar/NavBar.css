@@ -1,0 +1,11 @@
+.logo {
+  width: 300px;
+}
+
+.header{
+  background: #000;
+  position: fixed;
+  z-index: 1;
+   width: 100%;
+  text-align: center;
+}
