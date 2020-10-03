@@ -32,7 +32,6 @@ export default function CharacterListPage() {
     setOrigin(character.origin)
     setEpisodes(character.episode)
     fetchAllEpisodes()
-    console.log(allEpisodes)
   });
 
   const handleOk = e => {
@@ -108,16 +107,13 @@ export default function CharacterListPage() {
             return response.json();
           })
           .then(data => {
-            // console.log(allEpisodes)
             setAllEpisodes(allEpisodes.concat(data.results));
-            // setLoading(false);
           })
       })
   }
 
   return (
     <div>
-      {console.log(allEpisodes)}
       <Row gutter={[60, 48]}>
         {chars?.map((character, index) => (
           <Col span={6}>
